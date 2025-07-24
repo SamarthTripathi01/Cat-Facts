@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Sans-Serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  user-select: none;
+}
+
+/* Light theme */
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.light-mode .head {
+  background-color: blue;
+  color: white;
+}
+
+.light-mode .theme {
+  color: blue;
+  background-color: white;
+}
+
+.light-mode .container {
+  background-color: white;
+  color: black;
+}
+
+.light-mode .fact {
+  color: black;
+}
+
+/* Dark theme */
+.dark-mode {
+  background-color: #24252B;
+  color: white;
+}
+
+.dark-mode .head {
+  background-color: darkblue;
+}
+
+.dark-mode .theme {
+  color: darkblue;
+  background-color: white;
+}
+
+.dark-mode .container {
+  background-color: #24252B;
+}
+
+.dark-mode .fact {
+  color: white;
+}
+
+.head {
+  width: 100%;
+  height: 10vh;
+  padding-left: 12px;
+  font-size: 2rem;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
+
+.theme {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  gap: 5px;
+  padding: 10px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  cursor: pointer;
+}
+
+.subhead {
+  text-align: center;
+  line-height: 20px;
+  margin-top: 80px;
+}
+
+.subhead-text {
+  font-size: 0.9rem;
+}
+
+.container {
+  padding: 20px;
+  border: 1px solid blue;
+  border-radius: 15px;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-top: 40px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container h1 {
+  color: blue;
+  font-size: 1.5rem;
+}
+
+.container p {
+  font-weight: 700;
+  text-align: center;
+}
+
+.container button {
+  height: 3rem;
+  width: 15rem;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.container button:active {
+  background-color: darkgreen;
+}
+
+.foot {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  font-size: 0.9rem;
+  opacity: 0.5;
+}
